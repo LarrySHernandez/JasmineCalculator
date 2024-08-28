@@ -8,6 +8,9 @@ describe('calculateMonthlyPayment should return correct figures', function(){
     expect(calculateMonthlyPayment({amount: 300000, years: 25, rate: 7.99})).toBe('2313.46');
   });
 
+  it("should return a string", function(){
+    expect(calculateMonthlyPayment({amount: 300000, years: 25, rate: 7.99})).not.toBe(2313.46);
+  });
 
 });
 
@@ -15,10 +18,5 @@ describe('calculateMonthlyPayment should return correct figures', function(){
 
 
 
-// describe('updateMonthly should display the correct amount', function(){
-//     let val = document.getElementById('monthly-payment').innerText;
-//   it('should display the correct amount on the UI', function(){
-//     expect(val).toBe('2313.46');
-//   })
-// });
+
 /// etc

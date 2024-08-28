@@ -37,7 +37,7 @@ function update() {
   updateMonthly(payment);
 }
 
-// Given an object of values (a value has amount, years and rate ),
+// Given an object of values (a value has amount, years and rate),
 // calculate the monthly payment.  The output should be a string
 // that always has 2 decimal places.
 function calculateMonthlyPayment(values) {
